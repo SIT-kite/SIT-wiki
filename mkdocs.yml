@@ -1,1 +1,13 @@
-site_name: My Docs
+site_name: 上应 Wiki
+site_url: https://kite.sunnysab.cn/wiki/
+repo_url: https://github.com/SIT-kite/SIT-wiki
+
+site_description: 这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，旨在解答大家的疑问。
+site_author: "易班,树洞盒子,表白墙"
+copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
+
+theme:
+  name: material
+
+use_directory_urls: true
+strict: true
