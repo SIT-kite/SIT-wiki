@@ -1,13 +1,39 @@
+# https://www.mkdocs.org/user-guide/configuration/
+# https://squidfunk.github.io/mkdocs-material/
+
+# site
 site_name: 上应 Wiki
 site_url: https://kite.sunnysab.cn/wiki/
+site_description: >-
+  这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，旨在解答大家的疑问。
+site_author: "上应大易班,树洞盒子,表白墙"
+
+# repo
+# repo_name: SIT-kite/SIT-wiki
 repo_url: https://github.com/SIT-kite/SIT-wiki
 
-site_description: 这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，旨在解答大家的疑问。
-site_author: "易班,树洞盒子,表白墙"
 copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 
 theme:
   name: material
+  language: zh
+  # logo: assets/logo.svg
+  # favicon: assets/favicon.svg
+  palette:
+    - { scheme: default, toggle: { name: 使用暗色主题, icon: material/brightness-4 } }
+    - { scheme: slate,   toggle: { name: 使用亮色主题, icon: material/brightness-7 } }
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
 
-use_directory_urls: true
+extra:
+  social:
+    - { name: 上应小风筝 SIT-kite, link: https://github.com/SIT-kite, icon: fontawesome/brands/github }
+
+# https://python-markdown.github.io/extensions/#officially-supported-extensions
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+markdown_extensions: [ extra, sane_lists ]
+
 strict: true
+use_directory_urls: true
