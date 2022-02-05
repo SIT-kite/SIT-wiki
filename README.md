@@ -4,10 +4,12 @@
 
 
 ## 部署
-```bash
+
+``` bash
 git clone https://github.com/SIT-kite/SIT-wiki.git
 cd ./SIT-wiki
 pip install mkdocs-material
 mkdocs build
 ```
 
+详见[官方指导](https://squidfunk.github.io/mkdocs-material/getting-started/)（英文）。
