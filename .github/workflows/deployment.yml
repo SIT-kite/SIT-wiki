@@ -56,7 +56,7 @@ jobs:
         message: |
           🎉 Wiki Update!
           
-          Author: ${{ github.event.head_commit.author.name }}
+          Author: ${{ github.actor }}
           
           Message: ${{ github.event.head_commit.message }}
           
