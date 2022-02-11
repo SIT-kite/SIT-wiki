@@ -44,6 +44,14 @@ jobs:
         target: "/var/kite/SIT-wiki/site/"
         strip_components: 1
         
+    - uses: technote-space/workflow-conclusion-action@v2     
+    - name: 💡 Telegram Notification
+      uses: xinthink/action-telegram@v1.1
+      with:
+        botToken: ${{ secrets.BOT_TOKEN }}
+        chatId: ${{ secrets.CHAT_ID }}
+        jobStatus: ${{ env.WORKFLOW_CONCLUSION }}
+  
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
       with:
