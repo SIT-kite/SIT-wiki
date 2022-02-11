@@ -46,12 +46,12 @@ jobs:
     - uses: technote-space/workflow-conclusion-action@v2
 
     - name: 💡 Telegram Notification
+      if: env.WORKFLOW_CONCLUSION == 'failure' 
       uses: xinthink/action-telegram@v1.1
       with:
         botToken: ${{ secrets.BOT_TOKEN }}
         chatId: ${{ secrets.CHAT_ID }}
-        jobStatus: ${{ env.WORKFLOW_CONCLUSION }}
-        skipSuccess: false
+        jobStatus: ${{ env.WORKFLOW_CONCLUSION }} 
   
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
