@@ -65,7 +65,7 @@ jobs:
           token: ${{ secrets.BOT_TOKEN }}
           format: markdown
           message: |
-            🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build *${{ env.WORKFLOW_CONCLUSION }}*
+            🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki)  Build  *${{ env.WORKFLOW_CONCLUSION }}*
 
             Author: *${{ github.actor }}*
 
@@ -81,7 +81,7 @@ jobs:
           token: ${{ secrets.BOT_TOKEN }}
           format: markdown
           message: |
-            🎉 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build *${{ env.WORKFLOW_CONCLUSION }}*
+            🎉 [Wiki](https://github.com/SIT-kite/SIT-wiki)  Build  *${{ env.WORKFLOW_CONCLUSION }}*
 
             Author: *${{ github.actor }}*
 
