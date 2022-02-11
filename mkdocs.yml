@@ -31,9 +31,17 @@ extra:
   social:
     - { name: 上应小风筝 SIT-kite, link: https://github.com/SIT-kite, icon: fontawesome/brands/github }
 
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/
 # https://python-markdown.github.io/extensions/#officially-supported-extensions
-# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
-markdown_extensions: [ extra, sane_lists, pymdownx.tasklist ]
+# https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+  - meta
+  - sane_lists
+  - pymdownx.extra:
+      pymdownx.betterem: { smart_enable: all }
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.tasklist: { custom_checkbox: true }
 
 strict: true
 use_directory_urls: true
