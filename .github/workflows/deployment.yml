@@ -67,9 +67,9 @@ jobs:
           message: |
             🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build *${{ env.WORKFLOW_CONCLUSION }}*
 
-            Author: ${{ github.actor }}
+            Author: *${{ github.actor }}*
 
-            Message: ${{ github.event.head_commit.message }}
+            Message: *${{ github.event.head_commit.message }}*
 
             View [changes](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
 
@@ -83,9 +83,9 @@ jobs:
           message: |
             🎉 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build *${{ env.WORKFLOW_CONCLUSION }}*
 
-            Author: ${{ github.actor }}
+            Author: *${{ github.actor }}*
 
-            Message: ${{ github.event.head_commit.message }}
+            Message: *${{ github.event.head_commit.message }}*
 
             View [changes](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
 
