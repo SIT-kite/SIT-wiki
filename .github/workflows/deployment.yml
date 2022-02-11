@@ -51,6 +51,7 @@ jobs:
         botToken: ${{ secrets.BOT_TOKEN }}
         chatId: ${{ secrets.CHAT_ID }}
         jobStatus: ${{ env.WORKFLOW_CONCLUSION }}
+        skipSuccess: false
   
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
