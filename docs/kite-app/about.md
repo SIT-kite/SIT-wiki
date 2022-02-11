@@ -1,9 +1,11 @@
 # 关于上应小风筝
 
-这是一个由上海应用技术大学易班工作站主导开发、服务上海应用技术大学学生的应用。
-我们致力于将其打造为校内最现代、最实用的 App。
+这是一个由上海应用技术大学易班工作站主导开发、服务上海应用技术大学学生的应用。 我们不植入任何广告，不收集隐私信息，不收取任何费用。 我们致力于将其打造为校内最现代、最实用的 App。
 
-_点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues" 或者直接点[这里](https://github.com/SIT-kite/kite-app/issues)反馈问题，欢迎同学们提交 bug、提出好的点子、参与开发~_
+原先我们开发了 **“上应小风筝” 小程序**，由于一些原因（见《[我们为什么改做 App](why-do-we-migrate.md)》），现在将这一款应用呈现在你的面前，希望你能喜欢。
+
+_点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
+或者直接点[这里](https://github.com/SIT-kite/kite-app/issues)反馈问题，欢迎同学们提交 bug、提出好的点子、参与开发~_
 
 ## 主要功能
 
