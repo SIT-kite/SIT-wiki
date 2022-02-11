@@ -71,7 +71,7 @@ jobs:
 
             Message: *${{ github.event.head_commit.message }}*
 
-            Commit: *[${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})*
+            Commit: [${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
 
       - name: 🎯 Telegram Notification
         if: env.WORKFLOW_CONCLUSION != 'failure'
@@ -87,4 +87,4 @@ jobs:
 
             Message: *${{ github.event.head_commit.message }}*
 
-            Commit: *[${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})*
+            Commit: [${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
