@@ -58,20 +58,20 @@ jobs:
         with: { length: 7 }
 
       - name: 🎯 Telegram Notification
-        if: env.WORKFLOW_CONCLUSION != 'failure'
+        if: env.WORKFLOW_CONCLUSION == 'failure'
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.CHAT_ID }}
           token: ${{ secrets.BOT_TOKEN }}
           format: markdown
           message: |
-            🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build ${{ env.WORKFLOW_CONCLUSION }}
+            🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build *${{ env.WORKFLOW_CONCLUSION }}*
 
             Author: ${{ github.actor }}
 
             Message: ${{ github.event.head_commit.message }}
 
-            See changes: https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
+            View [changes](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
 
       - name: 🎯 Telegram Notification
         if: env.WORKFLOW_CONCLUSION != 'failure'
@@ -87,4 +87,5 @@ jobs:
 
             Message: ${{ github.event.head_commit.message }}
 
-            See changes: https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
+            View [changes](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
+
