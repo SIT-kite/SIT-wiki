@@ -1,0 +1,8 @@
+/* 放大拼音字号（50% -> 62.5%） */
+ruby > rt { font-size: 62.5%; }
+
+/* 缩小列表项目间距（.5em -> .25em） */
+.md-typeset ol li, .md-typeset ul li { margin-bottom: .25em; }
+
+/* 修复任务列表复选框偏移问题（多由浏览器默认样式造成） */
+.md-typeset .task-list-item [type="checkbox"] { margin: 0; }
