@@ -4,6 +4,8 @@
 
 ## 上应小风筝
 
+- [功能介绍](./kite-app/feature/)
+- [我们为什么迁移到 App](./kite-app/why-do-we-migrate/)
 - [关于](./kite-app/about/)
 - [更新日志](./kite-app/changelog/)
 <!-- - [未来功能](./kite-app/todo/) -->
