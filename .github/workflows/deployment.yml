@@ -33,41 +33,42 @@ jobs:
       run: |
         mkdocs build
 
-    - name: Copy file via ssh password
-      uses: appleboy/scp-action@master
+    - name: Copy file via SSH
+      uses: appleboy/scp-action@v0.1.2
       with:
-        host: ${{ secrets.SERVER_HOST }}
-        port: ${{ secrets.PORT }}
+        host:     ${{ secrets.SERVER_HOST }}
+        port:     ${{ secrets.PORT }}
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_SECRET }}
         source: "./site/*"
         target: "/var/kite/SIT-wiki/site/"
         strip_components: 1
 
+    # get workflow conclusion
     - uses: technote-space/workflow-conclusion-action@v2
 
-    - name: 💡 Telegram Notification
-      if: env.WORKFLOW_CONCLUSION == 'failure' 
+    - if: env.WORKFLOW_CONCLUSION == 'failure'
+      name: 💡 Telegram Notification
       uses: xinthink/action-telegram@v1.1
       with:
-        botToken: ${{ secrets.BOT_TOKEN }}
-        chatId: ${{ secrets.CHAT_ID }}
+        botToken:  ${{ secrets.BOT_TOKEN }}
+        chatId:    ${{ secrets.CHAT_ID }}
         jobStatus: ${{ env.WORKFLOW_CONCLUSION }} 
-  
+
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
       with: { length: 7 }
 
     - name: 🚀 Telegram Bot Message
-      uses: appleboy/telegram-action@master
+      uses: appleboy/telegram-action@v1.1.1
       with:
-        to: ${{ secrets.CHAT_ID }}
+        to:    ${{ secrets.CHAT_ID }}
         token: ${{ secrets.BOT_TOKEN }}
         message: |
           🎉 Wiki Update!
           
           Author: ${{ github.actor }}
           
-          Message: ${{ github.event.head_commit.message }}
+          Last message: ${{ github.event.head_commit.message }}
           
-          See changes: https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
+          https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
