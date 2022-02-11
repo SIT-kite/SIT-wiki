@@ -43,3 +43,17 @@ jobs:
         source: "./site/*"
         target: "/var/kite/SIT-wiki/site/"
         strip_components: 1
+        
+    - name: 🚀 Telegram Bot Message
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.CHAT_ID }}
+        token: ${{ secrets.BOT_TOKEN }}
+        message: |
+          🎉 Wiki Update!
+          
+          Author: ${{ github.event.head_commit.author.name }}
+          
+          Message: ${{ github.event.head_commit.message }}
+          
+          See changes: https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
