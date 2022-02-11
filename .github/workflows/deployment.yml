@@ -21,7 +21,7 @@ jobs:
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python-version }} 
+        python-version: ${{ matrix.python-version }}
 
     - name: Install dependencies
       run: |
@@ -53,22 +53,40 @@ jobs:
       with:
         botToken:  ${{ secrets.BOT_TOKEN }}
         chatId:    ${{ secrets.CHAT_ID }}
-        jobStatus: ${{ env.WORKFLOW_CONCLUSION }} 
+        jobStatus: ${{ env.WORKFLOW_CONCLUSION }}
 
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
       with: { length: 7 }
 
-    - name: 🚀 Telegram Bot Message
-      uses: appleboy/telegram-action@v0.1.1
+    - name: 🎯 Telegram Notification
+      if: env.WORKFLOW_CONCLUSION != 'success'
+      uses: appleboy/telegram-action@master
       with:
-        to:    ${{ secrets.CHAT_ID }}
+        to: ${{ secrets.CHAT_ID }}
         token: ${{ secrets.BOT_TOKEN }}
+        format: markdown
         message: |
-          🎉 Wiki Update!
-          
+          🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build ${{ env.WORKFLOW_CONCLUSION }}
+
           Author: ${{ github.actor }}
-          
-          Last message: ${{ github.event.head_commit.message }}
-          
-          https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
+
+          Message: ${{ github.event.head_commit.message }}
+
+          See changes: https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
+
+    - name: 🎯 Telegram Notification
+      if: env.WORKFLOW_CONCLUSION == 'success'
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.CHAT_ID }}
+        token: ${{ secrets.BOT_TOKEN }}
+        format: markdown
+        message: |
+          🎉 [Wiki](https://github.com/SIT-kite/SIT-wiki) Build *${{ env.WORKFLOW_CONCLUSION }}*
+
+          Author: ${{ github.actor }}
+
+          Message: ${{ github.event.head_commit.message }}
+
+          See changes: https://github.com/${{ github.repository }}/commit/${{ env.SHA }}
