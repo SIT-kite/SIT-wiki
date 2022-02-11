@@ -1,17 +1,36 @@
-# Welcome to MkDocs
+# 欢迎使用上应 Wiki
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，旨在解答大家的疑问。
 
-## Commands
+## 上应小风筝
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [关于](./kite-app/about/)
+- [更新日志](./kite-app/changelog/)
+<!-- - [未来功能](./kite-app/todo/) -->
 
-## Project layout
+## 在线服务
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+敬请期待~
+
+## 校区信息
+
+各个校区的信息。
+
+### 奉贤校区
+- 地址：上海市奉贤区海泉路100号
+- [饮水机](./canteen-menu/)
+- 食堂菜单
+  - [各食堂一览](./canteen-menu/)
+  - 一食堂（敬请期待）
+  - 二食堂（敬请期待）
+  - 三食堂（敬请期待）
+
+### 徐汇校区
+- 地址：上海市奉贤区漕宝路120号
+
+### 长桥校区
+- 地址：上海市徐汇区罗秀新村136号
+
+### 梅陇校区
+- 地址：上海市徐汇区天等路465号
+
