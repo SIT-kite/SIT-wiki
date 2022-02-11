@@ -2,10 +2,12 @@
 
 这是一个由上海应用技术大学易班工作站主导开发、服务上海应用技术大学学生的应用。 我们不植入任何广告，不收集隐私信息，不收取任何费用。 我们致力于将其打造为校内最现代、最实用的 App。
 
-原先我们开发了 **“上应小风筝” 小程序**，由于一些原因（见《[我们为什么改做 App](why-do-we-migrate.md)》），现在将这一款应用呈现在你的面前，希望你能喜欢。
+原先我们开发了 **“[上应小风筝][kite-microapp]” 小程序**，由于一些原因（见《[我们为什么改做 App](./why-do-we-migrate.md)》），现在将这一款应用呈现在你的面前，希望你能喜欢。
 
 _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
 或者直接点[这里](https://github.com/SIT-kite/kite-app/issues)反馈问题，欢迎同学们提交 bug、提出好的点子、参与开发~_
+
+在本应用的开发中，我们参考了一些优秀的开源项目，例如由复旦大学学生开发的[旦夕][DanXi] App，在此表示感谢。
 
 ## 主要功能
 
@@ -26,17 +28,9 @@ _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
 - [ ] 风景墙
 - [ ] 二手书中介
 
-你可以 [点击这里](feature.md) 查看我们的更多**功能介绍**。
-
-## 更多信息
-
-此项目源自我们的[上应小风筝][kite-microapp]小程序，由于[一些原因][migrate]，我们被迫改为 App 方式提供服务。
-
-在本应用的开发中，我们参考了一些优秀的开源项目，例如由复旦大学学生开发的[旦夕][DanXi] App，在此表示感谢。
+你可以 [点击这里](./feature.md) 查看我们的更多**功能介绍**。
 
 [kite-microapp]: https://github.com/SIT-kite/kite-microapp
-
-[migrate]: why-do-we-migrate.md
 
 [DanXi]: https://github.com/DanXi-Dev/DanXi
 
