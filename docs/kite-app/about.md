@@ -19,12 +19,14 @@ _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
 - [ ] 第二课堂
 - [x] 一网通办业务
 - [x] 公告
-- [ ] 校园通知
-- [ ] 空教室查询
+- [x] 校园通知
+- [x] 空教室查询
 - [x] 上应 Wiki
-- [ ] 常用电话
+- [x] 常用电话
 - [ ] 风景墙
 - [ ] 二手书中介
+
+你可以 [点击这里](feature.md) 查看我们的更多**功能介绍**。
 
 ## 更多信息
 
@@ -34,7 +36,8 @@ _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
 
 [kite-microapp]: https://github.com/SIT-kite/kite-microapp
 
-[migrate]: https://github.com/SIT-kite/kite-app/blob/master/WHY_DO_WE_MIGRATE.md
+[migrate]: why-do-we-migrate.md
+
 [DanXi]: https://github.com/DanXi-Dev/DanXi
 
 ## 联系我们
