@@ -44,6 +44,10 @@ jobs:
         target: "/var/kite/SIT-wiki/site/"
         strip_components: 1
         
+    - uses: benjlevesque/short-sha@v1.2
+      id: short-sha
+      with:
+        length: 7
     - name: 🚀 Telegram Bot Message
       uses: appleboy/telegram-action@master
       with:
