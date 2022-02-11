@@ -10,7 +10,7 @@ _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues" 
 - [x] 课程表
 - [x] 健康上报
 - [x] 消费记录
-- [x] 考试查询
+- [ ] 考试查询
 - [x] 成绩查询
 - [ ] 给分查询
 - [x] 评教
