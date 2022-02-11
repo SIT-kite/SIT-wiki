@@ -33,7 +33,7 @@ extra:
 
 # https://python-markdown.github.io/extensions/#officially-supported-extensions
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
-markdown_extensions: [ extra, sane_lists ]
+markdown_extensions: [ extra, sane_lists, pymdownx.tasklist ]
 
 strict: true
 use_directory_urls: true
