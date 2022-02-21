@@ -58,7 +58,7 @@ jobs:
 
       - name: 🎯 Telegram Notification
         if: env.WORKFLOW_CONCLUSION == 'success'
-        uses: appleboy/telegram-action@0.1.1
+        uses: appleboy/telegram-action@v0.1.1
         with:
           to: ${{ secrets.CHAT_ID }}
           token: ${{ secrets.BOT_TOKEN }}
@@ -74,7 +74,7 @@ jobs:
 
       - name: 🎯 Telegram Notification
         if: env.WORKFLOW_CONCLUSION != 'success'
-        uses: appleboy/telegram-action@0.1.1
+        uses: appleboy/telegram-action@v0.1.1
         with:
           to: ${{ secrets.CHAT_ID }}
           token: ${{ secrets.BOT_TOKEN }}
