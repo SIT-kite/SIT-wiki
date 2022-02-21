@@ -14,6 +14,8 @@ repo_url: https://github.com/SIT-kite/SIT-wiki
 
 copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 
+# ------------------------------------------------------------------------------
+
 theme:
 
   name: material
@@ -37,9 +39,13 @@ theme:
     - navigation.expand
     - navigation.indexes
 
+# ------------------------------------------------------------------------------
+
 extra:
   social:
-    - { name: 上应小风筝 SIT-kite, link: https://github.com/SIT-kite, icon: fontawesome/brands/github }
+    - name: 上应小风筝 SIT-kite
+      link: https://github.com/SIT-kite
+      icon: fontawesome/brands/github
 
 # https://www.mkdocs.org/user-guide/configuration/#extra_css
 extra_css:
@@ -50,6 +56,8 @@ use_directory_urls: true
 
 # https://www.mkdocs.org/user-guide/configuration/#strict
 strict: true
+
+# ------------------------------------------------------------------------------
 
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/
 # https://python-markdown.github.io/extensions/#officially-supported-extensions
@@ -82,12 +90,19 @@ markdown_extensions:
   # - [x] list
   - pymdownx.tasklist: { custom_checkbox: true }
 
+  # https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
+  - pymdownx.emoji:
+      emoji_index:     !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# ------------------------------------------------------------------------------
+
 # https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
 # https://www.mkdocs.org/user-guide/configuration/#nav
 nav:
 
-  - 上应 Wiki:
-    - 主页: index.md
+  - 主页:
+    - index.md
     - about.md
 
   - 奉贤校区:
