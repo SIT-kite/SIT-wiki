@@ -48,15 +48,21 @@ markdown_extensions:
   - sane_lists     # https://python-markdown.github.io/extensions/sane_lists/
   - pymdownx.extra # https://facelessuser.github.io/pymdown-extensions/extensions/extra/
 
-  - pymdownx.caret # ^s  ^HTML <sup> (superscript)^  ^^HTML <ins>^^
-  - pymdownx.tilde # ~s   ~HTML <sub> (subscript)~   ~~HTML <del>~~
+  - pymdownx.caret # ^s    ^HTML <sup> (superscript)^    ^^HTML <ins>^^
+  - pymdownx.tilde # ~s    ~HTML <sub>   (subscript)~    ~~HTML <del>~~
   - pymdownx.mark  # ==HTML <mark>==
 
   # ???  "HTML<details>"
   # ???+ "HTML<details open>"
   - pymdownx.details
 
+  # ``` yaml
+  # code: highlight
+  # ```
   - pymdownx.highlight
+
+  # - [ ] task
+  # - [x] list
   - pymdownx.tasklist: { custom_checkbox: true }
 
 strict: true

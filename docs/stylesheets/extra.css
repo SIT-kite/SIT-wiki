@@ -1,11 +1,26 @@
-/* 放大 <code> 字号（.85em -> inherit） */
+/* 放大 <code> 字号 .85em -> inherit */
 .md-typeset code { font-size: inherit; }
 
-/* 放大拼音字号（50% -> 62.5%） */
+/* 放大 <table> 字号 .64rem -> .75rem */
+.md-typeset table:not([class]) { font-size: .75rem; }
+
+/* 放大拼音字号 50% -> 62.5% */
 ruby > rt { font-size: 62.5%; }
 
-/* 缩小列表项目间距（.5em -> .25em） */
+
+/* 表格边框样式 行边框 -> 全部边框 */
+.md-typeset table:not([class]) { border: none; border-collapse: collapse; }
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td { border: .05rem solid var(--md-typeset-table-color); }
+
+
+/* 减小表格单元内边距 .9375em 1.25em -> */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td { padding: .5em 1em; }
+
+/* 缩小列表项目间距 .5em -> .25em */
 .md-typeset ol li, .md-typeset ul li { margin-bottom: .25em; }
+
 
 /* 修复任务列表复选框偏移问题（多由浏览器默认样式造成） */
 .md-typeset .task-list-item [type="checkbox"] { margin: 0; }
