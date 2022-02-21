@@ -31,8 +31,15 @@ extra:
   social:
     - { name: 上应小风筝 SIT-kite, link: https://github.com/SIT-kite, icon: fontawesome/brands/github }
 
+# https://www.mkdocs.org/user-guide/configuration/#extra_css
 extra_css:
   - stylesheets/extra.css
+
+# https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
+use_directory_urls: true
+
+# https://www.mkdocs.org/user-guide/configuration/#strict
+strict: true
 
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/
 # https://python-markdown.github.io/extensions/#officially-supported-extensions
@@ -65,9 +72,8 @@ markdown_extensions:
   # - [x] list
   - pymdownx.tasklist: { custom_checkbox: true }
 
-strict: true
-use_directory_urls: true
-
+# https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
+# https://www.mkdocs.org/user-guide/configuration/#nav
 nav:
 
   - 上应 Wiki:
@@ -75,12 +81,12 @@ nav:
     - about.md
 
   - 奉贤校区:
-    - water.md
-    - canteen-menu/index.md:
-      - canteen-menu/canteen-1.md
-      - canteen-menu/canteen-2.md
-      - canteen-menu/canteen-3.md
-
+    - fengxian/water.md
+    - fengxian/canteen-menu/index.md:
+      - fengxian/canteen-menu/canteen-1.md
+      - fengxian/canteen-menu/canteen-2.md
+      - fengxian/canteen-menu/canteen-3.md
+ 
   - 上应小风筝:
     - kite-app/about.md
     - kite-app/changelog.md
