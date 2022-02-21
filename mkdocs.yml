@@ -15,14 +15,21 @@ repo_url: https://github.com/SIT-kite/SIT-wiki
 copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 
 theme:
+
   name: material
   language: zh
   # font: false
   # logo: assets/logo.svg
   # favicon: assets/favicon.svg
+
   palette:
-    - { scheme: default, toggle: { name: 切换至暗色主题, icon: material/brightness-4 } }
-    - { scheme: slate,   toggle: { name: 切换至亮色主题, icon: material/brightness-7 } }
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle: { name: 切换至暗色主题, icon: material/brightness-4 }
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle: { name: 切换至亮色主题, icon: material/brightness-7 }
+
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
     - navigation.instant
@@ -80,7 +87,7 @@ markdown_extensions:
 nav:
 
   - 上应 Wiki:
-    - index.md
+    - 主页: index.md
     - about.md
 
   - 奉贤校区:
