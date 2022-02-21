@@ -17,15 +17,18 @@ copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 theme:
   name: material
   language: zh
+  # font: false
   # logo: assets/logo.svg
   # favicon: assets/favicon.svg
   palette:
-    - { scheme: default, toggle: { name: 使用暗色主题, icon: material/brightness-4 } }
-    - { scheme: slate,   toggle: { name: 使用亮色主题, icon: material/brightness-7 } }
+    - { scheme: default, toggle: { name: 切换至暗色主题, icon: material/brightness-4 } }
+    - { scheme: slate,   toggle: { name: 切换至亮色主题, icon: material/brightness-7 } }
   features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
     - navigation.instant
     - navigation.sections
     - navigation.expand
+    - navigation.indexes
 
 extra:
   social:
@@ -81,8 +84,10 @@ nav:
     - about.md
 
   - 奉贤校区:
+    - fengxian/index.md
     - fengxian/water.md
-    - fengxian/canteen-menu/index.md:
+    - 食堂菜单:
+      - fengxian/canteen-menu/index.md
       - fengxian/canteen-menu/canteen-1.md
       - fengxian/canteen-menu/canteen-2.md
       - fengxian/canteen-menu/canteen-3.md
