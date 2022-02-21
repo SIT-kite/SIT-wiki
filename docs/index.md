@@ -12,6 +12,25 @@
 
 ## 在线服务
 
+**官方链接**
+
+- 官网：<https://www.sit.edu.cn/>
+	- 通知公告：<https://www.sit.edu.cn/12999/list.htm>（放假通知在这里）
+- 招生网：<https://adm.sit.edu.cn/>
+- :fontawesome-brands-weibo: 官方微博：<https://weibo.com/sitedu>
+
+**校园服务**
+
+无需校园网：
+
+- :material-check:       健康上报：<http://xgfy.sit.edu.cn/h5/>
+- :material-lan-connect: 校园网 EasyConnect 程序下载：<https://myvpn.sit.edu.cn/com/installClient.html>
+
+需要校园网：
+
+- 信息门户：<https://myportal.sit.edu.cn/>
+- 正方教务：<https://jwxt.sit.edu.cn/>
+
 敬请期待~
 
 ## 校区信息
@@ -19,23 +38,24 @@
 有关各个校区的信息。
 
 ### 奉贤校区
-- 地址：上海市奉贤区海泉路100号
-- [饮水机位置](./fengxian/water/)
-- 食堂菜单
+
+- :fontawesome-solid-location-dot: 地址：上海市奉贤区海泉路100号
+- :potable_water: [饮水机位置](./fengxian/water/)
+- :material-food: 食堂菜单
 	- [各食堂一览](./fengxian/canteen-menu/)
-	- 一食堂（敬请期待）
-	- 二食堂（敬请期待）
-	- 三食堂（敬请期待）
+	- [一食堂](./fengxian/canteen-menu/canteen-1/)
+	- [二食堂](./fengxian/canteen-menu/canteen-2/)
+	- [三食堂](./fengxian/canteen-menu/canteen-3/)
 
 ### 徐汇校区
 
-- 地址：上海市奉贤区漕宝路120号
+- :fontawesome-solid-location-dot: 地址：上海市奉贤区漕宝路120号
 
 ### 长桥校区
 
-- 地址：上海市徐汇区罗秀新村136号
+- :fontawesome-solid-location-dot: 地址：上海市徐汇区罗秀新村136号
 
 ### 梅陇校区
 
-- 地址：上海市徐汇区天等路465号
+- :fontawesome-solid-location-dot: 地址：上海市徐汇区天等路465号
 
