@@ -1,11 +1,22 @@
+/* contain */
+.md-sidebar { height: auto; }
+.md-header, .md-sidebar, .md-content, .md-footer { contain: content; }
+
+/* card */
+.md-content__inner { padding: .6rem 1.2rem 1rem; box-shadow: var(--md-shadow-z2); }
+body[data-md-color-scheme="default"] { background-color: #EEE; }
+body[data-md-color-scheme="default"] .md-content__inner { background-color: white; }
+body[data-md-color-scheme="slate"] { background-color: #121212; }
+body[data-md-color-scheme="slate"] .md-content__inner { background-color: rgba(255, 255, 255, .07); }
+
+/* 放大拼音字号 50% -> 62.5% */
+ruby > rt { font-size: 62.5%; }
+
 /* 放大 <code> 字号 .85em -> inherit */
 .md-typeset code { font-size: inherit; }
 
 /* 放大 <table> 字号 .64rem -> .75rem */
 .md-typeset table:not([class]) { font-size: .75rem; }
-
-/* 放大拼音字号 50% -> 62.5% */
-ruby > rt { font-size: 62.5%; }
 
 
 /* 表格边框样式 行边框 -> 全部边框 */
