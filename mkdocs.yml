@@ -67,3 +67,22 @@ markdown_extensions:
 
 strict: true
 use_directory_urls: true
+
+nav:
+
+  - 上应 Wiki: index.md
+    - about.md
+
+  - 奉贤校区
+    - water.md
+    - canteen-menu/index.md
+      - canteen-menu/canteen-1.md
+      - canteen-menu/canteen-2.md
+      - canteen-menu/canteen-3.md
+
+  - 上应小风筝: kite-app/about.md
+    - kite-app/changelog.md
+    - kite-app/features.md
+    - kite-app/todo.md
+    - kite-app/why-do-we-migrate.md
+
