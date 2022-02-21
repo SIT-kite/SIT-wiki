@@ -1,13 +1,15 @@
 # 关于上应小风筝
 
-这是一个由上海应用技术大学易班工作站主导开发、服务上海应用技术大学学生的应用。 我们不植入任何广告，不收集隐私信息，不收取任何费用。 我们致力于将其打造为校内最现代、最实用的 App。
+这是一个由上海应用技术大学易班工作站主导开发、服务上海应用技术大学学生的应用。
+我们不植入任何广告，不收集隐私信息，不收取任何费用。
+我们致力于将其打造为校内最现代、最实用的 App。
 
-原先我们开发了 **“[上应小风筝][kite-microapp]” 小程序**，由于一些原因（见《[我们为什么改做 App](./why-do-we-migrate.md)》），现在将这一款应用呈现在你的面前，希望你能喜欢。
+原先，我们开发了 **“[上应小风筝][kite-microapp]” 小程序**，由于一些原因
+（见《[我们为什么改做 App](./why-do-we-migrate.md)》），
+现在将这一款应用呈现在你的面前，希望你能喜欢。
 
-_点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
-或者直接点[这里](https://github.com/SIT-kite/kite-app/issues)反馈问题，欢迎同学们提交 bug、提出好的点子、参与开发~_
-
-在本应用的开发中，我们参考了一些优秀的开源项目，例如由复旦大学学生开发的[旦夕][DanXi] App，在此表示感谢。
+_点 [GitHub 项目主页][kite-app]上方 "issues"或者直接点[这里][kite-app-issues]反馈问题。
+欢迎同学们提交 bug、提出好的点子、参与开发~_
 
 ## 主要功能
 
@@ -30,16 +32,12 @@ _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
 
 你可以 [点击这里](./feature.md) 查看我们的更多**功能介绍**。
 
-[kite-microapp]: https://github.com/SIT-kite/kite-microapp
-
-[DanXi]: https://github.com/DanXi-Dev/DanXi
-
 ## 联系我们
 
 - 向本项目提交 issue；
 - 在 QQ 群中联系管理员反馈：
-  - 小程序反馈群：`943110696`
-  - 2021级易班新生群：`147239936`（限本校学生加入）
+	- 小风筝反馈群：`943110696`
+	- 2021级易班新生群：`147239936`（限本校学生加入）
 - 地址：上海应用技术大学 奉贤校区 大学生活动中心 309室
 
 ## 参与贡献
@@ -53,21 +51,41 @@ _点 [GitHub 项目主页](https://github.com/SIT-kite/kite-app)上方 "issues"
 
 项目中的代码（程序源代码、配置文件等）采用 [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) 协议发布。
 
-注意，如果您修改并分发本项目，您应当同意，软件的“分发”或“发布”包括“为用户提供服务”。 您修改并分发项目后，应当对用户和我们（即，上海应用技术大学校易班工作站）公开全部源代码。
+```
+上应小风筝  便利校园，一步到位
+Copyright (C) 2022 上海应用技术大学 上应小风筝团队
 
-除此之外，您（非贡献者）也不能将本项目用于比赛、论文等活动。
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-### 标志版权
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-本项目的名称、标语、标志性图片等素材，仅限上海应用技术大学校易班工作站及原作者使用，或经其书面同意后使用，不对外授权。
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+除此之外，在未经同意的情况下，也不得将本项目用于比赛、论文等。
+
+## 标志版权
+
+本项目的名称、标语、标志性图片等素材，版权归作者（上海应用技术大学校易班工作站）所有。
 
 ## 致谢
 
-本项目中使用的其他开源项目有：
-
-- [Game2048](https://github.com/linuxsong/game2048)
-- [DanXi][DanXi]
-
-这些项目的开源协议详见其各自的 LICENSE 文件。
+- 在本项目的开发中，我们参考了一些优秀的开源项目，例如由复旦大学学生开发的[旦夕][DanXi] App；
+- 本项目中使用的其他开源项目有：
+	- [Game2048][game2048]
+	这些项目的开源协议详见其各自的 LICENSE 文件。
 
 在此表示感谢！
+
+[kite-app]:        https://github.com/SIT-kite/kite-app
+[kite-app-issues]: https://github.com/SIT-kite/kite-app/issues
+[kite-microapp]:   https://github.com/SIT-kite/kite-microapp
+[DanXi]:           https://github.com/DanXi-Dev/DanXi
+[game2048]:        https://github.com/linuxsong/game2048
