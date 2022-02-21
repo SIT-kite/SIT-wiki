@@ -1,13 +1,17 @@
 /* contain */
-.md-sidebar { height: auto; }
-.md-header, .md-sidebar, .md-content, .md-footer { contain: content; }
+.md-content { contain: content; }
 
 /* card */
-.md-content__inner { padding: .6rem 1.2rem 1rem; box-shadow: var(--md-shadow-z2); }
-body[data-md-color-scheme="default"] { background-color: #EEE; }
-body[data-md-color-scheme="default"] .md-content__inner { background-color: white; }
-body[data-md-color-scheme="slate"] { background-color: #121212; }
-body[data-md-color-scheme="slate"] .md-content__inner { background-color: rgba(255, 255, 255, .07); }
+@media screen and (max-width: 59.9375em) {
+	body[data-md-color-scheme="slate"] { background-color: #232323; }
+}
+@media screen and (min-width: 60em) {
+	.md-content__inner { padding: .6rem 1.2rem 1rem; box-shadow: var(--md-shadow-z2); }
+	body[data-md-color-scheme="default"] { background-color: #EEE; }
+	body[data-md-color-scheme="default"] .md-content__inner { background-color: white; }
+	body[data-md-color-scheme="slate"] { background-color: #121212; }
+	body[data-md-color-scheme="slate"] .md-content__inner { background-color: rgba(255, 255, 255, .07); }
+}
 
 /* 放大拼音字号 50% -> 62.5% */
 ruby > rt { font-size: 62.5%; }
