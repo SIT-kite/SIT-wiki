@@ -15,3 +15,6 @@ indent_size = 2
 [*.{yml,yaml}]
 indent_style = space
 indent_size = 2
+
+[requirements.txt]
+insert_final_newline = false
