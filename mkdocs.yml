@@ -51,6 +51,9 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - js/baidu-stats.js
+
 # https://www.mkdocs.org/user-guide/configuration/#use_directory_urls
 use_directory_urls: true
 
@@ -113,7 +116,7 @@ nav:
       - fengxian/canteen-menu/canteen-1.md
       - fengxian/canteen-menu/canteen-2.md
       - fengxian/canteen-menu/canteen-3.md
- 
+
   - 上应小风筝:
     - kite-app/about.md
     - kite-app/changelog.md
