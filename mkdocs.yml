@@ -70,8 +70,8 @@ markdown_extensions:
 
 - toc:
     permalink: true
-    slugify: headerid.slugify_unicode
-    # slugify: !!python/name:pymdownx.slugs.slugify { kwds: { case: lower } }
+    slugify: !!python/name:markdown.extensions.toc.slugify_unicode
+    # slugify: !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
 
 # ---
 # title: title
