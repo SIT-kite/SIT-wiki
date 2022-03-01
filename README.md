@@ -9,6 +9,7 @@
 git clone https://github.com/SIT-kite/SIT-wiki.git
 cd ./SIT-wiki
 pip install mkdocs-material
+pip install markdown-cjk-spacing
 mkdocs build
 ```
 
