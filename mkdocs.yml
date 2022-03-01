@@ -1,10 +1,8 @@
 # https://www.mkdocs.org/user-guide/configuration/
 # https://squidfunk.github.io/mkdocs-material/
 
-name: &name 上应 Wiki
-
 # site
-site_name: *name
+site_name: &name 上应 Wiki
 site_url: https://kite.sunnysab.cn/wiki/
 copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 site_author: "上应大易班,树洞盒子,表白墙"
