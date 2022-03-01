@@ -51,40 +51,40 @@ jobs:
     if: always()
     steps:
 
-      - uses: technote-space/workflow-conclusion-action@v2
+    - uses: technote-space/workflow-conclusion-action@v2
 
-      - uses: benjlevesque/short-sha@v1.2
-        id: short-sha
-        with: { length: 7 }
+    - uses: benjlevesque/short-sha@v1.2
+      id: short-sha
+      with: { length: 7 }
 
-      - name: 🎯 Telegram Notification
-        if: env.WORKFLOW_CONCLUSION == 'success'
-        uses: appleboy/telegram-action@v0.1.1
-        with:
-          to: ${{ secrets.CHAT_ID }}
-          token: ${{ secrets.BOT_TOKEN }}
-          format: markdown
-          message: |
-            🎉 [Wiki](https://github.com/SIT-kite/SIT-wiki)  Build  *${{ env.WORKFLOW_CONCLUSION }}*
+    - name: 🎯 Telegram Notification
+      if: env.WORKFLOW_CONCLUSION == 'success'
+      uses: appleboy/telegram-action@v0.1.1
+      with:
+        to: ${{ secrets.CHAT_ID }}
+        token: ${{ secrets.BOT_TOKEN }}
+        format: markdown
+        message: |
+          🎉 [Wiki](https://github.com/SIT-kite/SIT-wiki)  Build  *${{ env.WORKFLOW_CONCLUSION }}*
 
-            Author: *${{ github.actor }}*
+          Author: *${{ github.actor }}*
 
-            Message: *${{ github.event.head_commit.message }}*
+          Message: *${{ github.event.head_commit.message }}*
 
-            Commit: [${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
+          Commit: [${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
 
-      - name: 🎯 Telegram Notification
-        if: env.WORKFLOW_CONCLUSION != 'success'
-        uses: appleboy/telegram-action@v0.1.1
-        with:
-          to: ${{ secrets.CHAT_ID }}
-          token: ${{ secrets.BOT_TOKEN }}
-          format: markdown
-          message: |
-            🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki)  Build  *${{ env.WORKFLOW_CONCLUSION }}*
+    - name: 🎯 Telegram Notification
+      if: env.WORKFLOW_CONCLUSION != 'success'
+      uses: appleboy/telegram-action@v0.1.1
+      with:
+        to: ${{ secrets.CHAT_ID }}
+        token: ${{ secrets.BOT_TOKEN }}
+        format: markdown
+        message: |
+          🔴 [Wiki](https://github.com/SIT-kite/SIT-wiki)  Build  *${{ env.WORKFLOW_CONCLUSION }}*
 
-            Author: *${{ github.actor }}*
+          Author: *${{ github.actor }}*
 
-            Message: *${{ github.event.head_commit.message }}*
+          Message: *${{ github.event.head_commit.message }}*
 
-            Commit: [${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
+          Commit: [${{ env.SHA }}](https://github.com/${{ github.repository }}/commit/${{ env.SHA }})
