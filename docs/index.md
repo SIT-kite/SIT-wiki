@@ -31,7 +31,7 @@
 - 信息门户：<https://myportal.sit.edu.cn/>
 - 正方教务：<https://jwxt.sit.edu.cn/>
 
-敬请期待~
+> 即将收录更多服务…
 
 ## 校区信息
 

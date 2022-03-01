@@ -1,18 +1,20 @@
 # https://www.mkdocs.org/user-guide/configuration/
 # https://squidfunk.github.io/mkdocs-material/
 
+name: &name 上应 Wiki
+
 # site
-site_name: 上应 Wiki
+site_name: *name
 site_url: https://kite.sunnysab.cn/wiki/
-site_description: >-
-  这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，旨在解答大家的疑问。
+copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 site_author: "上应大易班,树洞盒子,表白墙"
+site_description: >-
+  这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，
+  旨在解答大家的疑问。
 
 # repo
-# repo_name: SIT-kite/SIT-wiki
+repo_name: *name
 repo_url: https://github.com/SIT-kite/SIT-wiki
-
-copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 
 # ------------------------------------------------------------------------------
 
@@ -65,6 +67,7 @@ strict: true
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/
 # https://python-markdown.github.io/extensions/#officially-supported-extensions
 # https://facelessuser.github.io/pymdown-extensions/
+
 markdown_extensions:
 
   # ---
@@ -102,10 +105,12 @@ markdown_extensions:
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
 # https://www.mkdocs.org/user-guide/configuration/#nav
+
 nav:
 
   - 主页:
     - index.md
+    - contribute.md
     - about.md
 
   - 奉贤校区:
