@@ -1,1 +1,2 @@
 mkdocs-material>=8.0.0
+markdown-cjk-spacing>=0.2.2
