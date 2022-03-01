@@ -2,7 +2,7 @@
 # https://squidfunk.github.io/mkdocs-material/
 
 # site
-site_name: &name 上应 Wiki
+site_name: 上应 Wiki
 site_url: https://kite.sunnysab.cn/wiki/
 copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
 site_author: "上应大易班,树洞盒子,表白墙"
@@ -11,7 +11,7 @@ site_description: >-
   旨在解答大家的疑问。
 
 # repo
-repo_name: *name
+repo_name: 上应 Wiki @ GitHub
 repo_url: https://github.com/SIT-kite/SIT-wiki
 
 # ------------------------------------------------------------------------------
