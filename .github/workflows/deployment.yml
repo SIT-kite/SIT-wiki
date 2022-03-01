@@ -28,6 +28,7 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         python3 -m pip install mkdocs-material
+        python3 -m pip install markdown-cjk-spacing
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Build wiki

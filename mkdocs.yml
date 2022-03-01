@@ -68,21 +68,34 @@ strict: true
 
 markdown_extensions:
 
+  toc:
+    permalink: true
+    slugify: headerid.slugify_unicode
+    # slugify: !!python/name:pymdownx.slugs.slugify { kwds: { case: lower } }
+
   # ---
   # title: title
   # description: description
   # ---
   - meta
 
+  # !!! note "Title"
+  # <div class="admonition note">
+  #   <p class="admonition-title">Title</p>
+  #   ...
+  # </div>
+  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - admonition
+
   - sane_lists     # https://python-markdown.github.io/extensions/sane_lists/
   - pymdownx.extra # https://facelessuser.github.io/pymdown-extensions/extensions/extra/
 
-  - pymdownx.caret # ^s    ^HTML <sup> (superscript)^    ^^HTML <ins>^^
-  - pymdownx.tilde # ~s    ~HTML <sub>   (subscript)~    ~~HTML <del>~~
+  - pymdownx.caret # ^s    ^<sup> (superscript)^    ^^<ins>^^
+  - pymdownx.tilde # ~s    ~<sub>   (subscript)~    ~~<del>~~
   - pymdownx.mark  # ==HTML <mark>==
 
-  # ???  "HTML<details>"
-  # ???+ "HTML<details open>"
+  # ???     <details>
+  # ???+    <details open>
   - pymdownx.details
 
   # ``` yaml
