@@ -26,6 +26,9 @@ ruby > rt { font-size: 62.5%; margin: 0 -.25em; }
 .md-typeset ol ol, .md-typeset ol ul,
 .md-typeset ul ol, .md-typeset ul ul { font-size: .75rem; }
 
+/* 首行缩进 */
+.md-typeset > p { text-indent: 2em; }
+
 /* 表格边框样式 行边框 -> 全部边框 */
 .md-typeset table:not([class]) { border: none; border-collapse: collapse; }
 .md-typeset table:not([class]) th,
