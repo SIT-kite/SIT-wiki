@@ -6,6 +6,7 @@
 
 - [关于上应小风筝](./kite-app/about/)
 - [功能介绍](./kite-app/feature/)
+- [“小游戏”指南](./kite-app/game/)
 - [我们为什么迁移到 App](./kite-app/why-do-we-migrate/)
 - [更新日志](./kite-app/changelog/)
 <!-- - [未来功能](./kite-app/todo/) -->
