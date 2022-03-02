@@ -14,7 +14,7 @@
 }
 
 /* 放大拼音字号 50% -> 62.5% */
-ruby > rt { font-size: 62.5%; }
+ruby > rt { font-size: 62.5%; margin: 0 -.25em; }
 
 /* 放大 <code> 字号 .85em -> inherit */
 .md-typeset code { font-size: inherit; }
