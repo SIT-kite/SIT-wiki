@@ -47,6 +47,11 @@ extra:
     link: https://github.com/SIT-kite
     icon: fontawesome/brands/github
 
+  analytics:
+    provider: google
+    property: G-31EK5FBHBR
+
+
 # https://www.mkdocs.org/user-guide/configuration/#extra_css
 extra_css:
 - stylesheets/extra.css
