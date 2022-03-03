@@ -16,7 +16,10 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v2
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      # https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/#note-when-using-build-environments
+      with: { fetch-depth: 0 }
 
     - name: Setup Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
@@ -26,23 +29,21 @@ jobs:
 
     - name: Install requirements
       run: |
-        python3 -m pip install --upgrade pip
-        python3 -m pip install mkdocs-material
-        python3 -m pip install markdown-cjk-spacing
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -U pip
+        pip install -r requirements.txt
 
     - name: Build wiki
       run: mkdocs build
 
-    - name: Copy file via SSH
+    - name: Copy files via SSH
       uses: appleboy/scp-action@v0.1.2
       with:
         host:     ${{ secrets.SERVER_HOST }}
         port:     ${{ secrets.PORT }}
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_SECRET }}
-        source: "./site/*"
-        target: "/var/kite/SIT-wiki/site/"
+        source: ./site/*
+        target: /var/kite/SIT-wiki/site/
         strip_components: 1
 
   notification:
