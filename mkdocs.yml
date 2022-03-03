@@ -65,7 +65,8 @@ extra_css:
 - stylesheets/extra.css
 
 extra_javascript:
-- js/baidu-stats.js
+- javascripts/extra.js
+- https://hm.baidu.com/hm.js?13810d475a9e99554fc24cd520271225
 
 plugins:
 
@@ -75,6 +76,7 @@ plugins:
   # https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/
   - git-revision-date-localized:
       type: datetime
+      locale: zh # zh_CN
       timezone: Asia/Shanghai
       enable_creation_date: true
 
