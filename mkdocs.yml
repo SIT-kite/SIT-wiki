@@ -23,6 +23,8 @@ theme:
   # font: false
   # logo: assets/logo.svg
   # favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
 
   palette:
   - scheme: default
@@ -42,6 +44,7 @@ theme:
 # ------------------------------------------------------------------------------
 
 extra:
+
   social:
   - name: 上应小风筝 SIT-kite
     link: https://github.com/SIT-kite
@@ -50,7 +53,6 @@ extra:
   analytics:
     provider: google
     property: G-31EK5FBHBR
-
 
 # https://www.mkdocs.org/user-guide/configuration/#extra_css
 extra_css:
