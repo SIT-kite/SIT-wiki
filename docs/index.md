@@ -9,6 +9,7 @@
 - [“小游戏”指南](./kite-app/game/)
 - [我们为什么迁移到 App](./kite-app/why-do-we-migrate/)
 - [更新日志](./kite-app/changelog/)
+- [上应必答](./kite-app/bbs/)
 <!-- - [未来功能](./kite-app/todo/) -->
 
 ## 在线服务
