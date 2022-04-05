@@ -5,7 +5,7 @@
 ## MkDocs
 
 本项目使用了 [MkDocs](https://www.mkdocs.org/)，本项目和许多其他 MkDocs 项目使用了
-[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)。
+:logo: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)。
 
 下方友情链接中，链接前带有 :logo: 图标的网站是使用 MkDocs 和 Material for MkDocs 搭建的。
 
