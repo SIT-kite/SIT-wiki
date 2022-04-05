@@ -143,6 +143,7 @@ nav:
 
 - 主页:
   - index.md
+  - emotion.md
   - contribute.md
   - about.md
 
@@ -159,5 +160,7 @@ nav:
   - kite-app/about.md
   - kite-app/changelog.md
   - kite-app/features.md
+  - kite-app/bbs.md
+  - kite-app/game.md
   - kite-app/todo.md
   - kite-app/why-do-we-migrate.md
