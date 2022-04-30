@@ -30,4 +30,4 @@ SIT嗷呜猫猫花名册
 
 ## 屏幕截图
 
-![img.png](assets/img.png)
+![嗷呜小程序-截图](assets/aowu-screenshot.png)
