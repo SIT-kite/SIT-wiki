@@ -26,7 +26,7 @@
 [dir="rtl"] .md-typeset .canteen-menu,
 [dir="rtl"] .md-typeset .canteen-menu > li { margin-right: 0; }
 .canteen-menu { column-width: 10em; column-rule: 1px dashed #9E9E9E; font-size: .7rem; }
-.canteen-menu > li { display: flex; align-items: flex-end; }
+.canteen-menu > li { display: flex; align-items: center; }
 .canteen-menu > li > .name { flex-grow: 1; }
 </style>
 
@@ -49,7 +49,7 @@
 <li><span class="name">农家地三鲜饭</span>	<span class="price">13 元</span></li>
 <li><span class="name">酸豆角肉沫饭</span>	<span class="price">13 元</span></li>
 <li><span class="name">铁板手撕包菜饭</span>	<span class="price">14 元</span></li>
-<li><span class="name">干煸<ruby>豇<rp>（</rp><rt>jiāng</rt><rp>）</rp></ruby>豆肉丝饭</span>	<span class="price">14.5 元</span></li>
+<li style="align-items: flex-end;"><span class="name">干煸<ruby>豇<rp>（</rp><rt>jiāng</rt><rp>）</rp></ruby>豆肉丝饭</span>	<span class="price">14.5 元</span></li>
 <li><span class="name">日式炸鸡块饭</span>	<span class="price">14.5 元</span></li>
 <li><span class="name">奥尔良鸡柳饭</span>	<span class="price">14.5 元</span></li>
 <li><span class="name">糖醋小排饭</span>	<span class="price">14.5 元</span></li>
@@ -76,7 +76,7 @@
 <li><span class="name">青椒炒蛋饭</span>	<span class="price">12 元</span></li>
 <li><span class="name">番茄炒蛋饭</span>	<span class="price">12 元</span></li>
 <li><span class="name">洋葱肉丝饭</span>	<span class="price">13.5 元</span></li>
-<li><span class="name">铁板手<ruby>扒<rp>（</rp><rt>pá</rt><rp>）</rp></ruby>鸡饭</span>	<span class="price">14 元</span></li>
+<li style="align-items: flex-end;"><span class="name">铁板手<ruby>扒<rp>（</rp><rt>pá</rt><rp>）</rp></ruby>鸡饭</span>	<span class="price">14 元</span></li>
 <li><span class="name">糖醋排条饭</span>	<span class="price">14 元</span></li>
 </ul>
 

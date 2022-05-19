@@ -13,7 +13,7 @@
 [dir="rtl"] .md-typeset .canteen-menu,
 [dir="rtl"] .md-typeset .canteen-menu > li { margin-right: 0; }
 .canteen-menu { column-width: 10em; column-rule: 1px dashed #9E9E9E; font-size: .7rem; }
-.canteen-menu > li { display: flex; align-items: flex-end; }
+.canteen-menu > li { display: flex; align-items: center; }
 .canteen-menu > li > .name { flex-grow: 1; }
 </style>
 
