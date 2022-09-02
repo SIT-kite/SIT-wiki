@@ -18,7 +18,7 @@
 
 <video id="video" controls="" preload="none" poster="封面">
       <source id="mp4" src="https://kite.sunnysab.cn/wiki/assets/课表导入指南.mp4" type="video/mp4">
-</videos>
+</video>
 
 1. 小风筝登录怎么选？
 
