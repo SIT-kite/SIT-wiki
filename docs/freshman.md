@@ -6,7 +6,7 @@
 
 ## 查阅类
 
-1. VPN 地址填 `https://vpn1.sit.edu.cn` ，安装程序可以在群里或应用商店搜索 `Easy Connect`。
+1. VPN 地址填 `https://vpn1.sit.edu.cn` ，安装程序可以在群里或应用商店搜索 `Easy Connect`。Windows 版下载地址： [这里](https://www.sit.edu.cn/14256/list.htm)。
 
 2. OA 是办公自动化系统（Office Automation） 的缩写，这里是校园网上一堆系统的简称。
 
@@ -16,9 +16,13 @@
 
 0. App 视频教程
 
-<video id="video" controls="" preload="none" poster="封面">
-      <source id="mp4" src="https://kite.sunnysab.cn/wiki/assets/课表导入指南.mp4" type="video/mp4">
-</video>
+<p align="center>">
+	<video id="video" controls="" preload="none" poster="封面">
+				<source id="mp4" src="https://kite.sunnysab.cn/wiki/assets/课表导入指南.mp4" type="video/mp4">
+	</video>
+</p>
+
+   视频由 `19-食品-尹二橙` 学姐录制。
 
 1. 小风筝登录怎么选？
    
@@ -28,7 +32,7 @@
 
 2. 小风筝登不上怎么办？
    
-   如上一点所述，如果**一般入口**无法登录，请在保证密码正确输入的前提下重试。如果提示 `登录尝试超过 5 次`，一般重试即可。 如果提示 `用户名或密码错误`，请前往 [这里](https://myportal.sit.edu.cn) 确认问题。如果问题依旧存在，可能是信息尚未录入导致的，耐心等待几日即可。若开学后问题依旧存在，可以向辅导员或学校信息办反映该问题（[021-60873286](tel:02160873286)，图书馆 B102）。  
+   如上一点所述，如果**一般入口**无法登录，请在保证密码正确输入的前提下重试。如果提示 `登录尝试超过 5 次`，一般重试即可。 如果提示 `用户名或密码错误`，请前往 [这里](https://myportal.sit.edu.cn) 确认问题。如果问题依旧存在，可能是信息尚未录入导致的，耐心等待几日即可。若开学后问题依旧存在，可以向辅导员或学校信息办反映该问题（[021-60873285](tel:02160873285)，图书馆 B102）。  
    如果**迎新入口**提示 `无匹配的新生数据`，有两种情况：
    
    - 非全日制研究生，无寝室信息，导入时被过滤。  
