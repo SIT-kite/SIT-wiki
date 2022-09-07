@@ -143,6 +143,7 @@ nav:
 
 - 主页:
   - index.md
+  - freshman.md
   - aowu.md
   - emotion.md
   - contribute.md
@@ -151,6 +152,7 @@ nav:
 - 奉贤校区:
   - fengxian/index.md
   - fengxian/water.md
+  - fengxian/moon-cake.md
   - 食堂菜单:
     - fengxian/canteen-menu/index.md
     - fengxian/canteen-menu/canteen-1.md

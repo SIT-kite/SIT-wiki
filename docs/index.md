@@ -49,6 +49,7 @@
 
 - :fontawesome-solid-location-dot: 地址：上海市奉贤区海泉路100号
 - :potable_water: [饮水机位置](./fengxian/water/)
+- [中秋月饼](./fengxian/moon-cake/)
 - :material-food: 食堂菜单
 	- [各食堂一览](./fengxian/canteen-menu/)
 	- [一食堂](./fengxian/canteen-menu/canteen-1/)
