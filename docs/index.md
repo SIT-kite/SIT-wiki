@@ -58,7 +58,7 @@
 
 ### 徐汇校区
 
-- :fontawesome-solid-location-dot: 地址：上海市奉贤区漕宝路120号
+- :fontawesome-solid-location-dot: 地址：上海市徐汇区漕宝路120号
 
 ### 长桥校区
 
