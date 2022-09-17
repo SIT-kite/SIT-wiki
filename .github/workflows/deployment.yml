@@ -46,6 +46,16 @@ jobs:
         target: /var/kite/SIT-wiki/site/
         strip_components: 1
 
+    - name: push to Aliyun CDN
+      uses: weirui88888/aliyun-cdn-sdk@v1.0.0
+      with:
+        # accessKeyId is required
+        accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY }}
+        # accessKeySecret is required
+        accessKeySecret: ${{ secrets.ALIYUN_SECRET }}
+        # request params,Request parameters consist of base request parameters and API custom parameters
+        parameters: Action=RefreshDcdnObjectCaches&ObjectPath=https://kite.sunnysab.cn/wiki/&ObjectType=Directory
+
   notification:
     runs-on: ubuntu-latest
     needs: build
