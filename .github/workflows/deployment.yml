@@ -61,7 +61,7 @@ jobs:
 
     - uses: technote-space/workflow-conclusion-action@v2
 
-    - uses: benjlevesque/short-sha@v1
+    - uses: benjlevesque/short-sha@v2.1
       id: short-sha
       with: { length: 7 }
 
