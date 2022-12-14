@@ -47,7 +47,7 @@ jobs:
         strip_components: 1
 
     - name: refresh Aliyun CDN
-      uses: weirui88888/aliyun-cdn-sdk@v1
+      uses: weirui88888/aliyun-cdn-sdk@v1.0.0
       with:
         # accessKeyId is required
         accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY }}
