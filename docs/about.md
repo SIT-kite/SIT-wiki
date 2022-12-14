@@ -1,6 +1,6 @@
 # 关于上应 Wiki
 
-这是一个由上海应用技术大学易班工作站、树洞盒子和表白墙共同发起的项目，旨在解答大家的疑问。
+这是一个由上海应用技术大学易班工作站和上应小风筝发起的项目，旨在解答大家的疑问。
 
 ## MkDocs
 
@@ -21,4 +21,5 @@
 - :logo: [SDUCS wiki](https://sducs.wiki/) - 山东大学计算机科学与技术学院百科
 - :logo: [IT50](https://it50.org/zh-Hans/) - 信息技术核心概念课程
 - :logo: [CS自学指南](https://csdiy.wiki/) - 计算机自学指南
-- [CXmooc-tool](https://cx.icodef.com/) - 慕课工具
+- [CXmooc-tool](https://cx.icodef.com/) - 慕课小工具
+- [OCS](https://docs.ocsjs.com/) - 网课助手

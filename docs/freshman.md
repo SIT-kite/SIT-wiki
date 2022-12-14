@@ -16,10 +16,8 @@
 
 0. App 视频教程
 
-<p align="center>">
-	<video id="video" controls="" preload="none" poster="封面">
-				<source id="mp4" src="https://kite.sunnysab.cn/wiki/assets/课表导入指南.mp4" type="video/mp4">
-	</video>
+<p align="center">
+	<video id="video" src="https://kite.sunnysab.cn/wiki/assets/课表导入指南.mp4" type="video/mp4" preload="none"></video>
 </p>
 
    视频由 `19-食品-尹二橙` 学姐录制。
