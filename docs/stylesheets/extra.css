@@ -13,7 +13,6 @@
 	body[data-md-color-scheme="slate"] .md-content__inner { background-color: rgba(255, 255, 255, .07); }
 }
 
-.image-block { display: block; margin: .5em auto; }
 
 /* 放大拼音字号 50% -> 62.5% */
 ruby > rt { font-size: 62.5%; margin: 0 -.25em; }
@@ -30,6 +29,8 @@ ruby > rt { font-size: 62.5%; margin: 0 -.25em; }
 
 /* 首行缩进 */
 .md-typeset > p { text-indent: 2em; }
+/* 首行缩进 - 避免图片缩进（关联 extra.js 图片部分） */
+.md-typeset .image-block { display: block; margin: .5em auto; }
 
 /* 表格边框样式 行边框 -> 全部边框 */
 .md-typeset table:not([class]) { border: none; border-collapse: collapse; }
