@@ -5,10 +5,9 @@
 site_name: 上应 Wiki
 site_url: https://kite.sunnysab.cn/wiki/
 copyright: 上应 Wiki, 采用 CC0-1.0 协议授权
-site_author: "上应大易班,树洞盒子,表白墙"
+site_author: "上应大易班,小风筝,上应小风筝"
 site_description: >-
-  这是一个由上海应用技术大学易班工作站、上应小风筝发起的项目，
-  旨在解答大家的疑问。
+  这是一个由上海应用技术大学易班工作站和上应小风筝发起的项目，旨在解答大家的疑问。
 
 # repo
 repo_name: 上应 Wiki @ GitHub
@@ -60,6 +59,11 @@ extra:
     provider: google
     property: G-31EK5FBHBR
 
+
+# https://www.mkdocs.org/user-guide/configuration/#docs_dir
+# docs_dir: docs
+# site_dir: site
+
 # https://www.mkdocs.org/user-guide/configuration/#extra_css
 extra_css:
 - stylesheets/extra.css
@@ -95,7 +99,9 @@ markdown_extensions:
 
 # ---
 # title: title
+# subtitle: subtitle
 # description: description
+# icon: material/emoticon-happy
 # ---
 - meta
 
