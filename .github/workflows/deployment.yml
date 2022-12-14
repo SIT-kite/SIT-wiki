@@ -39,7 +39,7 @@ jobs:
       uses: appleboy/scp-action@v0.1.3
       with:
         host:     ${{ secrets.SERVER_HOST }}
-        port:     ${{ secrets.PORT }}
+        port:     ${{ secrets.SERVER_PORT }}
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_SECRET }}
         source: ./site/*
@@ -69,7 +69,7 @@ jobs:
       if: env.WORKFLOW_CONCLUSION == 'success'
       uses: appleboy/telegram-action@v0.1.1
       with:
-        to: ${{ secrets.CHAT_ID }}
+        to: ${{ secrets.CHANNEL_CHAT_ID }}
         token: ${{ secrets.BOT_TOKEN }}
         format: markdown
         message: |
@@ -85,7 +85,7 @@ jobs:
       if: env.WORKFLOW_CONCLUSION != 'success'
       uses: appleboy/telegram-action@v0.1.1
       with:
-        to: ${{ secrets.CHAT_ID }}
+        to: ${{ secrets.CHANNEL_CHAT_ID }}
         token: ${{ secrets.BOT_TOKEN }}
         format: markdown
         message: |
