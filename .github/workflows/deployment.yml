@@ -12,7 +12,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    strategy: { matrix: { python-version: [ "3.10" ] } }
+    strategy: { matrix: { python-version: [ "3.11" ] } }
 
     steps:
 
@@ -36,7 +36,7 @@ jobs:
       run: mkdocs build
 
     - name: Copy files via SSH
-      uses: appleboy/scp-action@v0.1.2
+      uses: appleboy/scp-action@v0.1.3
       with:
         host:     ${{ secrets.SERVER_HOST }}
         port:     ${{ secrets.PORT }}
@@ -47,7 +47,7 @@ jobs:
         strip_components: 1
 
     - name: refresh Aliyun CDN
-      uses: weirui88888/aliyun-cdn-sdk@v1.0.0
+      uses: weirui88888/aliyun-cdn-sdk@v1
       with:
         # accessKeyId is required
         accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY }}
@@ -64,7 +64,7 @@ jobs:
 
     - uses: technote-space/workflow-conclusion-action@v2
 
-    - uses: benjlevesque/short-sha@v1.2
+    - uses: benjlevesque/short-sha@v1
       id: short-sha
       with: { length: 7 }
 
