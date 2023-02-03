@@ -35,23 +35,14 @@ jobs:
     - name: Build wiki
       run: mkdocs build
 
-    - name: Copy files via SSH
-      uses: appleboy/scp-action@v0.1.3
+    - uses: hujiulong/action-qiniu-upload@master
       with:
-        host:     ${{ secrets.SERVER_HOST }}
-        port:     ${{ secrets.SERVER_PORT }}
-        username: ${{ secrets.SERVER_USER }}
-        password: ${{ secrets.SERVER_SECRET }}
-        source: ./site/*
-        target: /var/kite/SIT-wiki/site/
-        strip_components: 1
-
-    # - name: refresh Aliyun CDN
-    #   uses: weirui88888/aliyun-cdn-sdk@v1.0.0
-    #   with:
-    #     accessKeyId: ${{ secrets.ALIYUN_ACCESS_KEY }}
-    #     accessKeySecret: ${{ secrets.ALIYUN_SECRET }}
-    #     parameters: '{"Action": "RefreshDcdnObjectCaches", "ObjectPath": "https://kite.sunnysab.cn/wiki/", "ObjectType": "Directory"}'
+        access_key: ${{ secrets.QINIU_ACCESS_KEY }}
+        secret_key: ${{ secrets.QINIU_SECRET_KEY }}
+        bucket: ${{ secrets.QINIU_BUCKET_SITE }}
+        source_dir: "./site"
+        dest_dir: "/wiki"
+        ignore_source_map: true
 
   notification:
     runs-on: ubuntu-latest
